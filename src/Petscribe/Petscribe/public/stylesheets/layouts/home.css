@@ -1,0 +1,42 @@
+﻿body
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#main
+{
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+#main .Header
+{
+    height: 100%;
+    width: 100%;
+    min-height: 450px;
+}
+
+#main .Header_Content
+{
+    position: absolute;
+    -webkit-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#main .Header h1
+{
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 60px;
+}

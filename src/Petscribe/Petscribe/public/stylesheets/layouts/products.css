@@ -1,0 +1,86 @@
+﻿body
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.Horizontal_Space
+{
+    width: 100%;
+    height: 50px;
+}
+
+#shopfront
+{
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+#calculator
+{
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background: white;
+}
+
+#shopfront .Header
+{
+    width: 100%;
+    min-height: 100px;
+}
+
+#shopfront .Header_Content
+{
+    position: relative;
+}
+
+#shopfront .Product
+{
+    position: relative;
+    width: 100%;
+    min-height: 200px;
+}
+
+#shopfront .Product_Content
+{
+    position: relative;
+}
+
+#shopfront .Product_Content .Product_Button
+{
+    width: auto;
+    height: auto;
+    margin: 2em;
+}
+
+#shopfront .Product_Content .Product_Button button
+{
+    padding: 2em;
+    padding-left : 3em;
+    padding-right : 3em;
+}
+
+#shopfront h1
+{
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 60px;
+}
+
+#calculator h2 
+{
+    color: black;
+}
+
+#calculator p 
+{
+    color: black;
+}
+
+#calculator ul li p
+{
+    margin-left: 2em;
+}

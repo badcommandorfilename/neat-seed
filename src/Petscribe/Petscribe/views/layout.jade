@@ -1,0 +1,23 @@
+﻿doctype html
+html
+  head
+    title= title
+
+    script(type='text/javascript', src='/js/utils/google-analytics.js')
+    
+    script(type='text/javascript') window.appName = '#{name}' + "App";
+    script(type='text/javascript', src='/include/requirejs/require.js', data-main="/js/main.js")
+
+    script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js')
+    script(type='text/javascript', src='/include/bootstrap/js/bootstrap.min.js')
+
+    block content-scripts
+
+    link(rel='stylesheet', href='/stylesheets/styles/bootstrap-petscribe.css')
+    link(rel='stylesheet', href='/stylesheets/layouts/#{name}.css')
+    link(rel='stylesheet', href='/stylesheets/layouts/navbar-top.css')
+    link(rel='stylesheet', href='/stylesheets/layouts/footer-bot.css')
+  body
+    include navbar-top
+    block content
+    include footer-bot

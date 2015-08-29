@@ -1,0 +1,18 @@
+﻿#navbar-top
+{
+
+}
+
+#navbar-top .collapse-width-container
+{
+    -webkit-transition: width 0.35s ease;
+    -moz-transition: width 0.35s ease;
+    -o-transition: width 0.35s ease;
+    transition: width 0.35s ease;
+}
+
+#navbar-top .collapse-width .collapse-item 
+{
+    overflow: hidden;
+    width: 0px;
+}

@@ -1,0 +1,74 @@
+﻿extends layout
+
+block content-scripts
+
+block content
+    div(ng-controller='ProductsController')
+        div(id="shopfront" class="container-fluid")
+            div(class="row")
+                div(class="col-md-2")
+                div(class="col-md-8")
+                    div(class="row")
+                        div(class="col-md-12")
+                            div(class="Header")
+                                div(class="Header_Content")
+                                    h1= title
+                    div(class="row")
+                        div(class="col-md-12")
+                            div(class="Horizontal_Space")
+                    div(class="row")
+                        div(class="col-md-12")
+                            h2 Products:
+                            div(class="Product")
+                                div(class="Product_Content")
+                                    div(class="col-md-12")
+                                        div(class="Product_Button" ng-repeat='p in products.available' ng-class='{row : $index % 2 === 1}')
+                                            div(class="col-md-6")
+                                                button(class="btn btn-block btn-primary" ng-class='{"btn-success" : p.id === products.selected}' ng-click='products.selected = p.id') {{p.name}}
+                div(class="col-md-2")
+
+        div(class="container-fluid")
+            div(class="row")
+                div(class="col-md-12")
+                    div(class="Horizontal_Space")
+
+        div(id="calculator" class="container-fluid")
+            div(class="row")
+                div(class="col-md-12")
+                    div(class="Horizontal_Space")
+            div(class="row")
+                div(class="col-md-2")
+                div(class="col-md-8")
+                    div(class="row")
+                        div(class="col-md-12")
+                            h2 Quantity:
+                            div(class="Product")
+                                div(class="Product_Content")
+                                    div(class="col-md-12")
+                                        div(class="row")
+                                            div(class="col-md-4")
+                                            div(class="col-md-4")
+                                                div(class="row")
+                                                    div(class="col-md-6")
+                                                        div(class="Product_Button btn-group" dropdown)
+                                                            button(id="single-button" class="btn btn-primary btn-block" dropdown-toggle ) {{quantity.adult}} Adult {{quantity.adult==1 ? "Cavy" : "Cavies"}}
+                                                                span(class="caret")
+                                                            ul(class="dropdown-menu" role="menu" aria-labelledby="single-button")
+                                                                li(ng-repeat='n in [0, 1, 2, 3, 4]')
+                                                                    p(ng-click='quantity.adult=n') {{n}}
+                                                    div(class="col-md-6")
+                                                        div(class="Product_Button btn-group" dropdown)
+                                                            button(id="single-button" class="btn btn-primary btn-block" dropdown-toggle) {{quantity.young}} Young {{quantity.young==1 ? "Cavy" : "Cavies"}}
+                                                                span(class="caret")
+                                                            ul(class="dropdown-menu" role="menu" aria-labelledby="single-button")
+                                                                li(ng-repeat='n in [0, 1, 2, 3, 4]')
+                                                                    p(ng-click='quantity.young=n') {{n}}
+                                            div(class="col-md-4")
+                                                
+                div(class="col-md-2")
+                div(class="row")
+                    div(class="col-md-12")
+                        div(class="Horizontal_Space")
+                div(class="row")
+                    div(class="col-md-12")
+                        div(class="Horizontal_Space")

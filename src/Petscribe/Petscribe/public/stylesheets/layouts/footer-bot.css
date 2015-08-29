@@ -1,0 +1,20 @@
+﻿#footer-bot
+{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: auto;
+}
+
+#footer-bot .Footer_Content
+{
+    position: absolute;
+    width: 100%;
+    background: white;
+}
+
+#footer-bot small
+{
+    color: rgb(173, 29, 40);
+}
