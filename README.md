@@ -7,8 +7,11 @@ Node.js Express Angular.js Typescript
 ### What is this repository for? ###
 
 * Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+
+This is a seed app for quickly setting up a webapp with Node.js and Typescript. 
+
+It is based off an early prototype of http://petscribe.com.au/ before we switched to C#/.NET Core for the backend.
+
 
 ### How do I get set up? ###
 
@@ -16,19 +19,3 @@ Node.js Express Angular.js Typescript
     * Install VS2015
     * Fetch the node modules from package.json (i.e. npm install or right click on npm in the solution explorer...)
     * Rebuild the project
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
